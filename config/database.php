@@ -7,6 +7,13 @@
  * Version: 1.0
  */
 
+// Database Constants
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'pos_system');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_CHARSET', 'utf8mb4');
+
 class Database {
     private $host = 'localhost';
     private $db_name = 'pos_system';
@@ -20,23 +27,34 @@ class Database {
      * @return mysqli|null
      */
     public function getConnection() {
-        $this->connection = new mysqli(
-            $this->host,
-            $this->username,
-            $this->password,
-            $this->db_name
-        );
+        try {
+            $this->connection = new mysqli(
+                $this->host,
+                $this->username,
+                $this->password,
+                $this->db_name
+            );
 
-        // Check connection
-        if ($this->connection->connect_error) {
-            error_log("Connection failed: " . $this->connection->connect_error);
+            // Check connection
+            if ($this->connection->connect_error) {
+                $error_msg = "Connection failed: " . $this->connection->connect_error;
+                error_log($error_msg);
+                throw new Exception($error_msg);
+            }
+
+            // Set charset
+            $this->connection->set_charset($this->charset);
+
+            // Verify connection is active
+            if (!$this->connection->ping()) {
+                throw new Exception("Connection ping failed");
+            }
+
+            return $this->connection;
+        } catch (Exception $e) {
+            error_log("Database Error: " . $e->getMessage());
             return null;
         }
-
-        // Set charset
-        $this->connection->set_charset($this->charset);
-
-        return $this->connection;
     }
 
     /**

@@ -7,14 +7,14 @@
 -- SEED DATA: users
 -- =========================================================================
 INSERT INTO users (username, email, password_hash, first_name, last_name, role, phone, is_active) VALUES
-('admin_user', 'admin@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Admin', 'User', 'admin', '555-0001', TRUE),
-('manager_john', 'john.manager@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'John', 'Manager', 'manager', '555-0002', TRUE),
-('manager_sarah', 'sarah.manager@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Sarah', 'Manager', 'manager', '555-0003', TRUE),
-('cashier_alice', 'alice.cashier@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Alice', 'Cashier', 'cashier', '555-0004', TRUE),
-('cashier_bob', 'bob.cashier@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Bob', 'Cashier', 'cashier', '555-0005', TRUE),
-('cashier_emily', 'emily.cashier@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Emily', 'Cashier', 'cashier', '555-0006', TRUE),
-('inventory_mike', 'mike.inventory@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Mike', 'Inventory Staff', 'inventory_staff', '555-0007', TRUE),
-('inventory_lisa', 'lisa.inventory@pos-system.local', '$2y$12$abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234', 'Lisa', 'Inventory Staff', 'inventory_staff', '555-0008', TRUE);
+('admin_user', 'admin@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Admin', 'User', 'admin', '555-0001', TRUE),
+('manager_john', 'john.manager@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'John', 'Manager', 'manager', '555-0002', TRUE),
+('manager_sarah', 'sarah.manager@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Sarah', 'Manager', 'manager', '555-0003', TRUE),
+('cashier_alice', 'alice.cashier@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Alice', 'Cashier', 'cashier', '555-0004', TRUE),
+('cashier_bob', 'bob.cashier@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Bob', 'Cashier', 'cashier', '555-0005', TRUE),
+('cashier_emily', 'emily.cashier@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Emily', 'Cashier', 'cashier', '555-0006', TRUE),
+('inventory_mike', 'mike.inventory@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Mike', 'Inventory Staff', 'inventory_staff', '555-0007', TRUE),
+('inventory_lisa', 'lisa.inventory@pos-system.local', '$2y$12$JPbE11Br5STsD1MImMG3OevvzZgRsvPJj/xs5Z3UglnvHbXZ.DDdy', 'Lisa', 'Inventory Staff', 'inventory_staff', '555-0008', TRUE);
 
 -- =========================================================================
 -- SEED DATA: categories

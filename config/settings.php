@@ -7,13 +7,18 @@
  * Version: 1.0
  */
 
+// Directory Settings - Only define if not already defined
+if (!defined('APP_DIR')) {
+    define('APP_DIR', dirname(dirname(__FILE__)));
+}
+
 // Application Settings
 define('APP_TIMEZONE', 'UTC');
 define('DATE_FORMAT', 'Y-m-d');
 define('TIME_FORMAT', 'H:i:s');
 define('DATETIME_FORMAT', 'Y-m-d H:i:s');
 
-// Directory Settings
+// Path Settings
 define('UPLOAD_DIR', APP_DIR . '/public/uploads/');
 define('LOG_DIR', APP_DIR . '/logs/');
 define('TEMP_DIR', APP_DIR . '/temp/');
@@ -35,6 +40,10 @@ define('ENABLE_SMS_NOTIFICATIONS', false);
 // Pagination
 define('ITEMS_PER_PAGE', 20);
 define('DEFAULT_PAGE', 1);
+
+// Currency Settings
+define('CURRENCY_SYMBOL', '$');
+define('CURRENCY_CODE', 'USD');
 
 // API Settings
 define('API_VERSION', 'v1');

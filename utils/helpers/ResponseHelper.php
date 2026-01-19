@@ -85,7 +85,7 @@ class ResponseHelper {
      */
     private static function send($response, $code = 200) {
         header('Content-Type: application/json');
-        http_response_code($code);
+        http_response_code((int)$code);
         echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
         exit;
     }
