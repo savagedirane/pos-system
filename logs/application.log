@@ -34,3 +34,12 @@
 [2026-01-17 14:37:37] [INFO] [1] User logged in successfully: admin_user {"user_id":1,"username":"admin_user","role":"admin","ip_address":"::1"}
 [2026-01-17 16:35:57] [INFO] [1] User logged in successfully: admin_user {"user_id":1,"username":"admin_user","role":"admin","ip_address":"::1"}
 [2026-01-17 16:37:35] [INFO] [2] User logged in successfully: manager_john {"user_id":2,"username":"manager_john","role":"manager","ip_address":"::1"}
+[2026-01-19 16:26:22] [INFO] [2] User logged in successfully: manager_john {"user_id":2,"username":"manager_john","role":"manager","ip_address":"::1"}
+[2026-01-19 16:31:40] [INFO] [1] User logged in successfully: admin_user {"user_id":1,"username":"admin_user","role":"admin","ip_address":"::1"}
+[2026-01-19 16:33:57] [WARNING] [anonymous] Login failed: User not found - slatty
+[2026-01-19 16:34:05] [WARNING] [anonymous] Login failed: User not found - slatty
+[2026-01-19 16:34:55] [WARNING] [anonymous] Login failed: User not found - slatty
+[2026-01-19 16:35:40] [WARNING] [anonymous] Login failed: Invalid password for user - cashier_alice
+[2026-01-19 16:35:54] [INFO] [4] User logged in successfully: cashier_alice {"user_id":4,"username":"cashier_alice","role":"cashier","ip_address":"::1"}
+[2026-01-20 17:06:02] [INFO] [1] User logged in successfully: admin_user {"user_id":1,"username":"admin_user","role":"admin","ip_address":"::1"}
+[2026-01-23 19:39:12] [INFO] [1] User logged in successfully: admin_user {"user_id":1,"username":"admin_user","role":"admin","ip_address":"::1"}
